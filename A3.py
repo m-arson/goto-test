@@ -10,7 +10,7 @@ for i in range(T):
     B = int(input())
     K = int(input())
 
-    if((1 <= T <= 100) and (1 <= A <= B < 10000) and (1 <= K < 10000)):
+    if (1<=T<= 100) and (1<=A<=B<10000) and (1<=K<10000):
         counter = 0
         for j in range(A,B+1):
             if not j % K:
