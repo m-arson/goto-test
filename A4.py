@@ -2,6 +2,8 @@
 # By Arson Marianus
 
 def find_word_horizontally(words, key):
+	if len(words[0]) < len(key):
+		return 0
 	count = 0
 	inx = 0
 	for word in words:
