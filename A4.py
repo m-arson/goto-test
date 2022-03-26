@@ -22,15 +22,15 @@ def find_word_vertically(words, key):
 	if len(words) < len(key):
 		return 0
 
-	new_words = []
+	word_buff = []
 
 	for i in range(len(words[0])):
-		tmp = ""
+		tmp_buff = ""
 		for j in range(len(words)):
-			tmp = tmp + words[j][i]
-		new_words.append(tmp)
+			tmp_buff = tmp_buff + words[j][i]
+		word_buff.append(tmp)
 
-	return find_word_horizontally(new_words, key)
+	return find_word_horizontally(word_buff, key)
 
 def find_word_diagonally(words, key):
 	if len(words) < len(key):
