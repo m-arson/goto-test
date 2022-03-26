@@ -1,4 +1,4 @@
-# Question 4
+# Answer for Question 4
 # By Arson Marianus
 
 def find_word_horizontally(words, key):
@@ -78,7 +78,6 @@ def find_word_diagonally(words, key):
 			tmp_buff[0] = tmp_buff[0] + words[i+j][j]
 			tmp_buff[1] = tmp_buff[1] + words[i+j][col-1-j]
 		if i != 0:
-			print(tmp_buff)
 			word_buff.append(tmp_buff[0])
 			word_buff.append(tmp_buff[1])
 		if mode == 1:
@@ -110,7 +109,9 @@ for _ in range(T):
 		words.append(tmp)
 
 	W = input()
-	count.append(search_word(words, W))
+
+	if (1<=T<=100) and (1<=N<=100) and (1<=M<=100) and (1<=len(W)<=100):
+		count.append(search_word(words, W))
 	words.clear()
 
 for i,j in enumerate(count):
