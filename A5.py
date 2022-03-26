@@ -26,7 +26,7 @@ contested = []
 
 T = int(input())
 
-for x in range(T):
+for _ in range(T):
 	N = int(input())
 	M = int(input())
 
