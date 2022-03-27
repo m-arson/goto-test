@@ -97,7 +97,6 @@ def search_word(words, key):
 		find_word_diagonally(words, key)
 	)
 
-words = []
 count = []
 
 T = int(input())
@@ -105,6 +104,8 @@ T = int(input())
 for _ in range(T):
 	N = int(input())
 	M = int(input())
+
+	words = []
 
 	for _ in range(N):
 		tmp = input()
@@ -114,7 +115,6 @@ for _ in range(T):
 
 	if (1<=T<=100) and (1<=N<=100) and (1<=M<=100) and (1<=len(W)<=100):
 		count.append(search_word(words, W))
-	words.clear()
 
 for i,j in enumerate(count):
 	print(f"Case {i+1}: {j}")
