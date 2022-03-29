@@ -2,8 +2,6 @@
 # By Arson Marianus
 
 def find_word_horizontally(words, key):
-	if len(words[0]) < len(key):
-		return 0
 	count = 0
 	inx = 0
 	for word in words:
@@ -24,15 +22,15 @@ def find_word_vertically(words, key):
 	if len(words) < len(key):
 		return 0
 
-	word_buff = []
+	new_words = []
 
 	for i in range(len(words[0])):
-		tmp_buff = ""
+		tmp = ""
 		for j in range(len(words)):
-			tmp_buff = tmp_buff + words[j][i]
-		word_buff.append(tmp)
+			tmp = tmp + words[j][i]
+		new_words.append(tmp)
 
-	return find_word_horizontally(word_buff, key)
+	return find_word_horizontally(new_words, key)
 
 def find_word_diagonally(words, key):
 	if len(words) < len(key):
@@ -97,6 +95,7 @@ def search_word(words, key):
 		find_word_diagonally(words, key)
 	)
 
+words = []
 count = []
 
 T = int(input())
@@ -104,8 +103,6 @@ T = int(input())
 for _ in range(T):
 	N = int(input())
 	M = int(input())
-
-	words = []
 
 	for _ in range(N):
 		tmp = input()
@@ -115,6 +112,7 @@ for _ in range(T):
 
 	if (1<=T<=100) and (1<=N<=100) and (1<=M<=100) and (1<=len(W)<=100):
 		count.append(search_word(words, W))
+	words.clear()
 
 for i,j in enumerate(count):
 	print(f"Case {i+1}: {j}")
