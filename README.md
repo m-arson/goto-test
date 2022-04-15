@@ -1,6 +1,7 @@
 ## GoTo Campus Hiring
 
-** Question 3 **
+**Question 3**
+
 Some people have been studying the following problem: given two numbers, A and B, how many numbers from A to B, inclusive, are divisible by another number K. For example, if A is 1, B is 10, and K is 3, then there are 3 numbers that satisfy this: 3, 6, and 9. Help them by programming a solution to this problem!
 
 Input:
@@ -32,7 +33,9 @@ Sample Output:
 Case 1: 3
 Case 2: 4
 ```
-*  Question 4*
+
+**Question 4**
+
 There is a well-known puzzle called Word Search that involves looking for words in a grid of letters. The words are given in a list and can appear in the grid horizontally, vertically, or diagonally in any direction. In this task, you should implement a solver for word search. You will be given grids and a word to search for, and you have to find how many times that word comes out in the grid. Words that are spelled the same backwards and forwards, also known as palindromes, will not be given, so you don’t need to worry about words that match in the exact same spot in two different directions.
 
 Input:
@@ -80,7 +83,7 @@ Case 2: 8
 Case 3: 4
 ```
 
-** Question 5 **
+**Question5 **
 
 You are presented with a map of a kingdom. Empty land on this map is depicted as ‘.’ (without the quotes), and mountains are depicted by ‘#’. This kingdom has factions whose armies are represented by lowercase letters in the map. Two armies of the same letter belong to the same faction.
 
